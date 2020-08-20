@@ -109,6 +109,12 @@ header {
 
 }
 
+.list-projects button:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+
+}
+
 .list-project-examples .example-title {
     font-size: 18px;
     line-height: 2;
