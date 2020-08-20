@@ -1,5 +1,3 @@
-/* index.html */
-
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -82,6 +80,38 @@ header {
 .header-contacts a:focus{
     color: var(--accent-color);
 }
+
+
+/* FOOTER */
+
+footer {
+    background-color: #2F303A;
+}
+
+.address {
+    color: #ffffff;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}   
+
+.address a{
+    color: var(--primary-text-color);
+}
+
+.address a:hover,
+.address a:focus{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.logo-footer {
+    color: #ffffff;
+}
+
+
+/* ---------------------- index.html ---------------------- */
 
 /* SECTION HERO*/
 
@@ -176,30 +206,51 @@ header {
     letter-spacing: 0.03em;
 }
 
-/* FOOTER */
 
-footer {
-    background-color: #2F303A;
+/* ---------------------- portfolio.html ---------------------- */
+
+
+/* SECTION PROJECTS */
+
+
+.projects {
+    background: #ffffff;
 }
 
-.address {
-    color: #ffffff;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}   
+.list-projects button {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
 
-.address a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;;
+}
+
+.list-projects button:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+
+}
+
+.list-projects button:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+
+}
+
+.list-project-examples .example-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.list-project-examples .example-description {
     color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
 }
 
-.address a:hover,
-.address a:focus{
-    color: rgba(255, 255, 255, 0.6);
-}
-
-
-.logo-footer {
-    color: #ffffff;
-}
