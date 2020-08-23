@@ -2,6 +2,13 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196f3;
+    --primary-bg-color: #ffffff;
+    
+    --logo-header-color: #000000;
+    --primary-white-color: #ffffff;
+    --second-bg-color: #2f303a;
+    --third-bg-color: #F5F4FA;
+    --footer-link-color:  rgba(255, 255, 255, 0.6);
    
 }
 
@@ -12,26 +19,21 @@ body {
     font-style: normal;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.title {
     color: var(--title-text-color)
 }
 
-/* HEADER */
-header {
-    background-color: #ffffff;
+/* HEADER AND FOOTER */
+.header {
+    background-color: var(--primary-bg-color)
 }
 
 .logo {
@@ -44,7 +46,7 @@ header {
 }
 
 .logo-header {
-    color: #000000;
+    color: var(--logo-color)
 }
 
 
@@ -62,8 +64,7 @@ header {
     letter-spacing: 0.02em;
 }
 
-.site-nav .nav-link:hover,
-.site-nav .nav-link:focus {
+.site-nav .current {
     color: var(--accent-color)
 }
 
@@ -76,20 +77,13 @@ header {
     letter-spacing: 0.02em;
 }
 
-.header-contacts a:hover,
-.header-contacts a:focus{
-    color: var(--accent-color);
-}
-
-
-/* FOOTER */
-
 footer {
-    background-color: #2F303A;
+    background-color: var(--second-bg-color)
 }
 
 .address {
-    color: #ffffff;
+    color: var(--primary-white-color);
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -97,30 +91,33 @@ footer {
 }   
 
 .address a{
-    color: var(--primary-text-color);
-}
-
-.address a:hover,
-.address a:focus{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-link-color);
 }
 
 
 .logo-footer {
-    color: #ffffff;
+    color: var(--logo-footer-color)
 }
 
+.address a:hover,
+.address a:focus,
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus,
+.header-contacts a:hover,
+.header-contacts a:focus{
+    color: var(--accent-color);
+}
 
 /* ---------------------- index.html ---------------------- */
 
 /* SECTION HERO*/
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--second-bg-color)
 }
 
 .hero-title {
-    color: #ffffff;
+    color: var(--primary-white-color);
 
     font-weight: 900;
     font-size: 44px;
@@ -131,7 +128,7 @@ footer {
 }
 
 .hero-button {
-    color: #ffffff;
+    color: var(--primary-white-color);
     background-color: var(--accent-color);
 
     font-weight: 700;
@@ -145,17 +142,17 @@ footer {
 /* SECTION ADVANTAGES */
 
 .advantages {
-    background-color: #ffffff;
+    background-color: var(--primary-bg-color);
 }
 
-.list-advantages .advantages-title{
+.advantages-title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.list-advantages .advantages-text {
+.advantages-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -166,7 +163,7 @@ footer {
 /* SECTION COMPETENCE */
 
 .competence {
-    background-color: #ffffff;
+    background-color: var(--primary-bg-color);
 }
 
 .competence-title {
@@ -180,7 +177,7 @@ footer {
 /* SECTION TEAM */
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--third-bg-color);
 }
 
 .team-title {
@@ -190,7 +187,7 @@ footer {
     letter-spacing: 0.03em; 
 }
 
-.list-team .member-title {
+.member-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -199,7 +196,7 @@ footer {
 
 }
 
-.list-team .member-description {
+.member-description {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -214,12 +211,12 @@ footer {
 
 
 .projects {
-    background: #ffffff;
+    background-color: var(--primary-bg-color)
 }
 
 .list-projects button {
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--third-bg-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -228,25 +225,20 @@ footer {
     letter-spacing: 0.03em;;
 }
 
-.list-projects button:hover {
-    color: #ffffff;
-    background-color: var(--accent-color);
-
-}
-
+.list-projects button:hover,
 .list-projects button:focus {
-    color: #ffffff;
+    color: var(--primary-white-color);
     background-color: var(--accent-color);
 
 }
 
-.list-project-examples .example-title {
+.example-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.list-project-examples .example-description {
+.example-description {
     color: var(--primary-text-color);
 
     font-size: 16px;
